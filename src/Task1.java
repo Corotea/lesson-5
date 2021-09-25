@@ -1,7 +1,6 @@
-import java.nio.file.LinkPermission;
 import java.util.Scanner;
 
-public class task1 {
+public class Task1 {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,7 +13,5 @@ public class task1 {
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i] + " ");
         }
-
-
     }
 }

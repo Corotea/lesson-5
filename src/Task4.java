@@ -1,16 +1,18 @@
 import java.util.Scanner;
 
-public class task2 {
+public class Task4 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int firstSize = scanner.nextInt();
-        int secondSize = scanner.nextInt();
+        int rows = scanner.nextInt();
+        int columns = scanner.nextInt();
 
-        int[][] arr = new int[firstSize][secondSize];
+        int[][] arr = new int[rows][columns];
 
-        for (int i = 0; i < arr.length; i++) {
-            for(int j = 0; j < arr[i].length; j++){
-                arr[i][j] = scanner.nextInt();
+        int start = 1;
+
+        for (int j = 0; j < columns; j++) {
+            for(int i = 0; i < rows; i++){
+                arr[i][j] = start++;
             }
         }
 
@@ -20,6 +22,5 @@ public class task2 {
             }
             System.out.println();
         }
-
     }
 }
